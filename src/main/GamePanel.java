@@ -246,7 +246,7 @@ public class GamePanel extends JPanel implements Runnable {
         // STATUS MESSAGES
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         g2.setFont(new Font("Book Antiqua", Font.BOLD, 20)); 
-        g2.setColor(Color.white);
+        g2.setColor(new Color(255, 253, 208));
 
 
 
