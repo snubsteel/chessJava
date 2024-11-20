@@ -1,6 +1,7 @@
 package main;
 
 import java.awt.AlphaComposite;
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -232,9 +233,19 @@ public class GamePanel extends JPanel implements Runnable {
         g2.setColor(new Color(112, 128, 144)); // Color
         g2.fillRoundRect(400, 0, 150, 400, 70, 70); // Location & dimensions & round edges
 
+        // SIDEBAR LINE LEFT
+        g2.setColor(Color.BLACK);
+        g2.setStroke(new BasicStroke(5));
+        g2.drawLine(400, 0, 400, 400 );
+
+        // SIDERBAR LINE RIGHT
+        g2.setColor(Color.BLACK);
+        g2.setStroke(new BasicStroke(10));
+        g2.drawLine(550, 0, 550, 550 );
+        
         // STATUS MESSAGES
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g2.setFont(new Font("Book Antiqua", Font.BOLD, 20)); //
+        g2.setFont(new Font("Book Antiqua", Font.BOLD, 20)); 
         g2.setColor(Color.white);
 
 
