@@ -228,15 +228,21 @@ public class GamePanel extends JPanel implements Runnable {
             activeP.draw(g2);
         }
 
+        // SIDEBAR
+        g2.setColor(new Color(112, 128, 144)); // Color
+        g2.fillRoundRect(400, 0, 150, 400, 70, 70); // Location & dimensions & round edges
+
         // STATUS MESSAGES
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g2.setFont(new Font("Book Antiqua", Font.BOLD, 20));
+        g2.setFont(new Font("Book Antiqua", Font.BOLD, 20)); //
         g2.setColor(Color.white);
+
+
 
         if (currentColor == WHITE) {
             g2.drawString("White's turn", 417, 35);
         } else {
-            g2.drawString("Black's turn", 420, 35);
+            g2.drawString("Black's turn", 417, 35);
         }
     }
    
