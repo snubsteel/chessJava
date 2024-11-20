@@ -13,7 +13,8 @@ public class Queen extends Piece {
             image = getImage("/piece_images/b-queen");
         }
     }
-        public boolean canMove(int targetCol, int targetRow) {
+    
+    public boolean canMove(int targetCol, int targetRow) {
 
             if(isWithinBoard(targetCol, targetRow) && isSameSquare(targetCol, targetRow) == false) {
 
