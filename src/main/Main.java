@@ -4,9 +4,9 @@ import javax.swing.JFrame;
 
 public class Main {
 
-    public static void main(String[]args) {
+    public static void main(String[] args) {
 
-        JFrame window = new JFrame ("Java Chess");
+        JFrame window = new JFrame("Java Chess");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
 

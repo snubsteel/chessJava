@@ -8,7 +8,7 @@ public class Board {
     final int MAX_COL = 8;
     final int MAX_ROW = 8;
     public static final int SQUARE_SIZE = 50;
-    public static final int HALF_SQUARE_SIZE = SQUARE_SIZE/2;
+    public static final int HALF_SQUARE_SIZE = SQUARE_SIZE / 2;
 
     public void draw(Graphics2D g2) {
 
@@ -18,17 +18,17 @@ public class Board {
 
             for (int col = 0; col < MAX_COL; col++) {
 
-                if(c == 0) {
+                if (c == 0) {
                     g2.setColor(new Color(255, 253, 208));
                     c = 1;
                 } else {
                     g2.setColor(new Color(112, 128, 144));
                     c = 0;
                 }
-                g2.fillRect(col*SQUARE_SIZE, row*SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE);
+                g2.fillRect(col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE);
             }
 
-            if(c == 0) {
+            if (c == 0) {
                 c = 1;
             } else {
                 c = 0;
